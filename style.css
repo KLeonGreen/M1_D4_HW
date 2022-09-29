@@ -32,6 +32,7 @@ body {
   border-radius: 70px;
   padding-bottom: 6%;
   color: white;
+  opacity: 0.9;
   transform: translateY(-180%);
   transition: 1s;
 }
@@ -47,8 +48,7 @@ body {
   bottom: 0;
   left: 2vh;
   display: inline-block;
-  margin-bottom: 40px;
-  /* background-color: white; */
+  margin-bottom: 10px;
   padding: 20px;
   right: 2vh;
   text-align: center;
@@ -56,48 +56,29 @@ body {
   transition: 1.2s;
 }
 
-#bottom_big_button {
-  background-color: white;
-  padding: 17px;
-  border-radius: 50px;
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#second_bottom_big_button {
-  background-color: white;
-  padding: 20px;
-  border-radius: 50%;
-  text-decoration: none;
-  color: black;
-}
-
-#third_bottom_big_button {
-  background-color: white;
-  padding: 20px;
-  border-radius: 50%;
-  text-decoration: none;
-  color: black;
-}
-
 .fa-solid.fa-arrow-up-from-bracket {
-  padding: 3px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+  color: black;
+  opacity: 0.8;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 
 .fa-solid.fa-ellipsis {
-  padding: 2px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  color: black;
+  opacity: 0.8;
 }
 
-.fa-solid.fa-arrow-turn-up {
-  padding-right: 8px;
+.fa-external-link-alt {
+  padding-right: 5px;
 }
+
 #main_content:hover {
   cursor: pointer;
   box-shadow: 0 0 65px rgb(157, 157, 157);
@@ -114,4 +95,51 @@ body {
   transform: translateY(0);
   transition: 0.7s;
   cursor: pointer;
+}
+
+#red_button:hover {
+  opacity: 1;
+}
+
+.inline_1:hover {
+  opacity: 1;
+}
+
+.fa-solid.fa-arrow-up-from-bracket:hover {
+  opacity: 1;
+}
+
+.fa-solid.fa-ellipsis:hover {
+  opacity: 1;
+}
+
+.inline_1 {
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  margin-right: 6px;
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 1.2em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.inline_1 a {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
+  color: black;
+  text-decoration: none;
+}
+
+.inline_2 {
+  display: inline-block;
+}
+
+.inline_3 {
+  display: inline-block;
 }
