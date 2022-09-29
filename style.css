@@ -94,6 +94,10 @@ body {
 .fa-solid.fa-ellipsis {
   padding: 2px;
 }
+
+.fa-solid.fa-arrow-turn-up {
+  padding-right: 8px;
+}
 #main_content:hover {
   cursor: pointer;
   box-shadow: 0 0 65px rgb(157, 157, 157);
