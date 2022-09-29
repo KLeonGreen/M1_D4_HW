@@ -1,14 +1,117 @@
 body {
-  background-color: antiquewhite;
+  background-color: rgb(255, 245, 245);
+  font-family: Helvetica, sans-serif;
 }
 
 #main_content {
   background-color: aqua;
-  width: 300px;
-  height: 40vh;
+  width: 400px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 25vh;
+  overflow: hidden;
+  border-radius: 50px;
+  transition: 1s;
 }
 
 #main_content img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+#red_button {
+  background-color: #e60023;
+  position: absolute;
+  top: 3vh;
+  right: 3vh;
+  width: 25%;
+  text-align: center;
+  padding-top: 6%;
+  border-radius: 70px;
+  padding-bottom: 6%;
+  color: white;
+  transform: translateY(-180%);
+  transition: 1s;
+}
+
+#red_button a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#bottom_content {
+  position: absolute;
+  bottom: 0;
+  left: 2vh;
+  display: inline-block;
+  margin-bottom: 40px;
+  /* background-color: white; */
+  padding: 20px;
+  right: 2vh;
+  text-align: center;
+  transform: translateY(180%);
+  transition: 1.2s;
+}
+
+#bottom_big_button {
+  background-color: white;
+  padding: 17px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#text_limit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#second_bottom_big_button {
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+}
+
+#third_bottom_big_button {
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: black;
+}
+
+.fa-solid.fa-arrow-up-from-bracket {
+  padding: 3px;
+}
+
+.fa-solid.fa-ellipsis {
+  padding: 3px;
+}
+#main_content:hover {
+  cursor: pointer;
+  box-shadow: 0 0 65px rgb(157, 157, 157);
+  transition: 2s;
+}
+
+#main_content:hover #red_button {
+  transform: translateY(0);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#main_content:hover #bottom_content {
+  transform: translateY(0);
+  transition: 0.7s;
+  cursor: pointer;
 }
